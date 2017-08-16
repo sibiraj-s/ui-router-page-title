@@ -13,6 +13,10 @@
     "ui.router"
   ],
   "homepage": "https://github.com/Sibiraj-S/ui-router-page-title",
+  "dependencies": {
+    "angular-ui-router": ">=1.0.0",
+    "angular": ">=1.6.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
