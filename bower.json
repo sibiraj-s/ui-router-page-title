@@ -1,0 +1,23 @@
+{
+  "name": "ui-router-page-title",
+  "description": "Page Title directive for angular-ui-router",
+  "main": "",
+  "authors": [
+    "Sibiraj-S"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ui-router-page-title",
+    "angularjs-page-title",
+    "ui-router-page-title",
+    "ui.router"
+  ],
+  "homepage": "https://github.com/Sibiraj-S/ui-router-page-title",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
