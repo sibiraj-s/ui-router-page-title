@@ -67,7 +67,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2cc57580d680d9d651f6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5d4a5f6cab05c2dbbe23"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -759,6 +759,9 @@ var uiRouterTitleDirective = (function () {
             ngModel: '='
         };
         uiRouterTitleDirective.prototype.link = function (scope, element, attrs) {
+            /*
+             * set title when the transition starts
+             */
             $transitions.onStart({}, function (trans) {
                 var title;
                 title = (trans.to().data && trans.to().data.pageTitle) ? trans.to().data.pageTitle : getTitle();
@@ -767,6 +770,10 @@ var uiRouterTitleDirective = (function () {
                     element.text(title);
                 }, 0, false);
             });
+            /*
+             * if the title isn't provided get set the title from title element
+             * or set 'Default Title'
+             */
             var getTitle = function () {
                 return element[0].innerText ? element[0].innerText : 'Default Title';
             };

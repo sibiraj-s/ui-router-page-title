@@ -9,6 +9,10 @@ class uiRouterTitleDirective implements ng.IDirective {
 
     constructor(private $timeout: ng.ITimeoutService, private $transitions) {
         uiRouterTitleDirective.prototype.link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) => {
+
+            /*
+             * set title when the transition starts
+             */
             $transitions.onStart({}, function (trans) {
 
                 let title;
@@ -21,6 +25,10 @@ class uiRouterTitleDirective implements ng.IDirective {
 
             });
 
+            /*
+             * if the title isn't provided get set the title from title element
+             * or set 'Default Title'
+             */
             const getTitle = function () {
                 return element[0].innerText ? element[0].innerText : 'Default Title'
             }
