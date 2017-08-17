@@ -1,7 +1,7 @@
 /*!
  * @module ui-router-page-title
  * @description Page Title directive for angular-ui-router
- * @version v1.0.1
+ * @version v1.0.2
  * @link https://github.com/Sibiraj-S/ui-router-page-title
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */

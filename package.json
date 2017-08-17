@@ -1,6 +1,6 @@
 {
   "name": "ui-router-page-title",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Page Title directive for angular-ui-router",
   "scripts": {
     "start": "NODE_ENV=development node_modules/.bin/webpack-dev-server --open",
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Sibiraj-S/ui-router-page-title",
   "dependencies": {
     "@uirouter/angularjs": ">=1.0.2",
-    "angular": ">=1.6.5"
+    "angular": ">=1.6.0"
   },
   "devDependencies": {
     "@types/angular": "^1.6.29",
