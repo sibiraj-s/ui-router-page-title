@@ -45,7 +45,7 @@ Import the modules required for ui-router-page-title. It is necessary to include
 <script src="ui-router-page-title/dist/page-title.min.js"></script>
  ```
 
-add `uiBreadcrumbs` dependency to the module
+add `uiRouterTitle` dependency to the module
 
 ```js
 angular.module('myApp', ['uiRouterTitle'])
