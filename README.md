@@ -1,6 +1,6 @@
 # ui-router-page-title
 
-Dynamic Page Title directive for angular-ui-router
+Dynamic Page Title directive for angular-ui-router(>=1.0.0)
 
 ## Getting Started
 
@@ -16,13 +16,13 @@ or use cdn
 ##### Minified
 
 ```bash
-//unpkg.com/ui-router-page-title@latest/dist/ui-router-page-title.min.js
+//unpkg.com/ui-router-page-title@latest/dist/page-title.min.js
 ```
 
 ##### Pretty Printed
 
 ```bash
-//unpkg.com/ui-router-page-title@latest/dist/ui-router-page-title.js
+//unpkg.com/ui-router-page-title@latest/dist/page-title.js
 ```
 or
 
@@ -42,7 +42,7 @@ Import the modules required for ui-router-page-title. It is necessary to include
 
  ```html
 <script src="angular/angular.min.js"></script>
-<script src="ui-router-page-title/dist/ui-router-page-title.min.js"></script>
+<script src="ui-router-page-title/dist/page-title.min.js"></script>
  ```
 
 add `uiBreadcrumbs` dependency to the module
