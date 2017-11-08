@@ -88,7 +88,7 @@ module.exports = grunt => {
 
     // grunt tasks
     grunt.registerTask('default', ["tslint", "ts"]);
-    grunt.registerTask('develop', ["default", "watch"]);
+    grunt.registerTask('develop', ["default", "concat", "watch"]);
     grunt.registerTask("serve", ["connect"]);
     grunt.registerTask("dist", ["default", "concat", "uglify"]);
 };
