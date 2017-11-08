@@ -3,13 +3,32 @@ var app = angular.module('myApp', ['uiRouterTitle', 'ui.router']);
 app.config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
 
+        $urlRouterProvider.otherwise('/home');
+
+        $urlRouterProvider.when('/', '/home');
+
         $stateProvider.state('home', {
-            url: '',
+            url: '/home',
             data: {
                 pageTitle: 'Home'
             },
-            template: '<h3>Home Page!</h3>'
+            templateUrl: './templates/home.html'
         })
+            .state('installation', {
+                url: '/installation',
+                data: {
+                    pageTitle: 'Installation'
+                },
+                templateUrl: './templates/installation.html'
+            })
+
+            .state('usage', {
+                url: '/usage',
+                data: {
+                    pageTitle: 'Usage'
+                },
+                templateUrl: './templates/usage.html'
+            });
 
     }
 ]);

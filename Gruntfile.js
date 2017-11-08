@@ -69,6 +69,17 @@ module.exports = grunt => {
                 }
             }
         },
+        sass: {
+            options: {
+                sourcemap: 'none',
+                style: 'expanded'
+            },
+            demo: {
+                files: {
+                    'docs/style.css': 'docs/style.scss'
+                }
+            }
+        },
         watch: {
             scripts: {
                 files: ['src/**/*.ts'],
@@ -76,6 +87,13 @@ module.exports = grunt => {
             },
             demoJs: {
                 files: ['docs/**/*.js']
+            },
+            demoScss: {
+                files: ['docs/**/*.scss'],
+                tasks: ['sass']
+            },
+            demoCss: {
+                files: ['docs/**/*.css'],
             },
             demoHtml: {
                 files: ['docs/**/*.html']
@@ -88,7 +106,7 @@ module.exports = grunt => {
 
     // grunt tasks
     grunt.registerTask('default', ["tslint", "ts"]);
-    grunt.registerTask('develop', ["default", "concat", "watch"]);
+    grunt.registerTask('develop', ["default", "concat", "sass", "watch"]);
     grunt.registerTask("serve", ["connect"]);
-    grunt.registerTask("dist", ["default", "concat", "uglify"]);
+    grunt.registerTask("dist", ["default", "concat", "sass", "uglify"]);
 };

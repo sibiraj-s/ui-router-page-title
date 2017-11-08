@@ -8,16 +8,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title page-title>UI-Router PageTitle</title>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div ui-view></div>
+  <div class="contain">
+    <div class="col40">
+      <a class="github-button" href="https://github.com/Sibiraj-S" aria-label="Follow @Sibiraj-S on GitHub">Follow @Sibiraj-S</a>
+      <a class="github-button" href="https://github.com/Sibiraj-S/ui-router-page-title/fork" data-icon="octicon-repo-forked" aria-label="Fork Sibiraj-S/ui-router-page-title on GitHub">Fork</a>
+      <a class="github-button" href="https://github.com/Sibiraj-S/ui-router-page-title/archive/master.zip" data-icon="octicon-cloud-download"
+        aria-label="Download Sibiraj-S/ui-router-page-title on GitHub">Download ui-router-page-title</a>
+      <br>
+      <br>
+      <h3>ui-router-page-title demo</h3>
+      <br>
+      <ul class="breadcrumb">
+        <li ui-sref-active="active">
+          <a ui-sref="home">Home Page</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="installation">Installation</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="usage">Usage</a>
+        </li>
+      </ul>
+      <div ui-view></div>
+    </div>
+    <div class="col60">
+      <h2>ui-router-page-title</h2>
+      <h3>Installation</h3>
+      <p>Installation can be done via package managers such as npm, yarn and bower</p>
+      <pre><code class="bash">
+      npm install ui-router-page-title --save
+      # or
+      yarn add ui-router-page-title
+      # or
+      bower install ui-router-page-title --save
+      </code></pre>
+      <h3>Usage</h3>
+      <p> import the modules required for ui-router-page-title. It is necessary to include
+        <a href="https://ui-router.github.io/" target="_blank">ui.router</a> for ui-router-page-title to work</p>
+      <pre><code class="html">
+      &lt;script src="angular/angular.min.js"&gt;&lt;/script&gt;
+      &lt;script src="ui-router-page-title/dist/ui-router-page-title.min.js"&gt;&lt;/script&gt;
+          </code></pre>
+      <p>add the
+        <a href="https://github.com/Sibiraj-S/ui-router-page-title" target="_blank">uiRouterTitle</a> dependency to the module</p>
+      <pre><code class="javascript">
+      angular.module('myApp', ['uiRouterTitle'])
+          </code></pre>
+      <p>in your router config</p>
+      <pre><code class="javascript">
+      .state('app.home', {
+          url: '/home',
+          data: {
+            pageTitle: 'Home' // is being set as tilte
+          },
+          templateUrl: 'templates/home.html'
+      })
+          </code></pre>
+      <p>in your html add
+        <mark>page-title</mark> directive</p>
+      <pre><code class="html">
+      &lt;title page-title&gt;UI-Router PageTitle &lt;/title&gt;
+          </code></pre>
+    </div>
+  </div>
   <!-- dependencies -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
   <script type="text/javascript" src="https://unpkg.com/@uirouter/angularjs@1.0.6/release/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="//unpkg.com/ui-router-page-title@latest/dist/page-title.min.js"></script>
   <!-- app scripts -->
   <script type="text/javascript" src="./app.js"></script>
+  <!-- highlight js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
 
 </html>
