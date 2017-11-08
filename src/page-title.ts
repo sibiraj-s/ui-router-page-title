@@ -1,6 +1,6 @@
-import { app } from './app';
+let app = angular.module('uiRouterTitle', []);
 
-class uiRouterTitleDirective implements ng.IDirective {
+class UiRouterTitleDirective implements ng.IDirective {
     public restrict = 'A';
     public link: (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) => void;
     public scope = {
@@ -8,7 +8,7 @@ class uiRouterTitleDirective implements ng.IDirective {
     };
 
     constructor(private $timeout: ng.ITimeoutService, private $transitions) {
-        uiRouterTitleDirective.prototype.link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) => {
+        UiRouterTitleDirective.prototype.link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes) => {
 
             /*
              * set title when the transition starts
@@ -30,18 +30,18 @@ class uiRouterTitleDirective implements ng.IDirective {
              * or set 'Default Title'
              */
             const getTitle = function () {
-                return element[0].innerText ? element[0].innerText : 'Default Title'
-            }
+                return element[0].innerText ? element[0].innerText : 'Default Title';
+            };
 
         };
     }
 
     public static Factory(): ng.IDirectiveFactory {
-        const directive = ($timeout: ng.ITimeoutService, $transitions) => new uiRouterTitleDirective($timeout, $transitions);
+        const directive = ($timeout: ng.ITimeoutService, $transitions) => new UiRouterTitleDirective($timeout, $transitions);
 
         directive['$inject'] = ['$timeout', '$transitions'];
         return directive;
     }
 }
 
-app.directive('pageTitle', uiRouterTitleDirective.Factory());
+app.directive('pageTitle', UiRouterTitleDirective.Factory());

@@ -9,6 +9,13 @@ Icon
 ## sass
 .sass-cache
 
+## ts-cache
+/.tscache
+
+## ide
+/.settings
+.project
+
 # Thumbnails
 ._*
 

@@ -1,0 +1,9 @@
+# source
+/src
+
+# docs
+/docs
+
+# miscellaneous
+/.vscode
+/.tscache
