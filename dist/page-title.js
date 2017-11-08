@@ -1,11 +1,3 @@
-/*!
- * @module ui-router-page-title
- * @description Page Title directive for angular-ui-router
- * @version v1.0.3
- * @link https://github.com/Sibiraj-S/ui-router-page-title
- * @licence MIT License, https://opensource.org/licenses/MIT
- */
-
 var app = angular.module('uiRouterTitle', []);
 var UiRouterTitleDirective = (function () {
     function UiRouterTitleDirective($timeout, $transitions) {

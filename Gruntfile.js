@@ -77,6 +77,9 @@ module.exports = grunt => {
             demoJs: {
                 files: ['docs/**/*.js']
             },
+            demoHtml: {
+                files: ['docs/**/*.html']
+            },
             options: {
                 livereload: true
             }
