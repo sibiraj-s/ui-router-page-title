@@ -16,24 +16,22 @@ or use cdn
 ##### Minified
 
 ```bash
-//unpkg.com/ui-router-page-title@latest/dist/page-title.min.js
+//unpkg.com/ui-router-page-title@latest/page-title.min.js
 ```
 
 ##### Pretty Printed
 
 ```bash
-//unpkg.com/ui-router-page-title@latest/dist/page-title.js
+//unpkg.com/ui-router-page-title@latest/page-title.js
 ```
 or
 
-Install via Package managers such as [npm][npm], [yarn][yarn] and [bower][bower]
+Install via Package managers such as [npm][npm] or [yarn][yarn]
 
 ```bash
 npm install ui-router-page-title --save
 # or
 yarn add ui-router-page-title
-# or
-bower install ui-router-page-title --save
 ```
 
 ### Usage
@@ -42,7 +40,7 @@ Import the modules required for ui-router-page-title. It is necessary to include
 
  ```html
 <script src="angular/angular.min.js"></script>
-<script src="ui-router-page-title/dist/page-title.min.js"></script>
+<script src="../page-title.min.js"></script>
  ```
 
 add `uiRouterTitle` dependency to the module
@@ -72,7 +70,6 @@ and in your html
 [uiRouter]: https://ui-router.github.io/
 [npm]: https://www.npmjs.com/
 [yarn]: https://yarnpkg.com/lang/en/
-[bower]: https://bower.io/
 [github]: https://sibiraj-s.github.io/
 [ui-router-page-title]: https://github.com/Sibiraj-S/ui-router-page-title
 [demo]: https://sibiraj-s.github.io/ui-router-page-title/
