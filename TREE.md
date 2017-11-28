@@ -1,23 +1,23 @@
 ```
 .
-├── demo
-│   ├── app.js
-│   ├── favicon.ico
-│   └── index.html
-├── dist
-│   ├── page-title.js
-│   ├── page-title.min.js
-│   └── page-title.min.js.map
+├── scripts
+│   ├── postbuild.sh
+│   ├── prebuild.sh
+│   └── release.sh
 ├── src
-│   ├── app.ts
 │   └── page-title.ts
+├── .vscode
+│   └── settings.json
 ├── .gitignore
+├── Gruntfile.js
 ├── LICENSE
-├── README.md
-├── TREE.md
-├── bower.json
 ├── package.json
+├── package-lock.json
+├── .pullapprove.yml
+├── README.md
+├── .travis.yml
+├── TREE.md
 ├── tsconfig.json
-├── webpack.config.js
+├── tslint.json
 └── yarn.lock
 ```
