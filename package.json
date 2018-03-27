@@ -1,6 +1,6 @@
 {
   "name": "ui-router-page-title",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Page Title directive for angular-ui-router",
   "scripts": {
     "build": "grunt build",
