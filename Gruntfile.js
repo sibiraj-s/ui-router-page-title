@@ -62,6 +62,7 @@ module.exports = grunt => {
             server: {
                 options: {
                     hostname: 'localhost',
+                    open: true,
                     port: 9002,
                     base: './',
                     keepalive: true,
@@ -81,25 +82,31 @@ module.exports = grunt => {
             }
         },
         watch: {
-            scripts: {
+            scriptTS: {
                 files: ['src/**/*.ts'],
                 tasks: ['ts']
             },
-            demoJs: {
-                files: ['docs/**/*.js']
+            scriptJS: {
+                files: ['docs/**/*.js', 'dist/**/*.js'],
+                options: {
+                    livereload: true
+                }
             },
-            demoScss: {
+            scss: {
                 files: ['docs/**/*.scss'],
                 tasks: ['sass']
             },
-            demoCss: {
+            css: {
                 files: ['docs/**/*.css'],
+                options: {
+                    livereload: true
+                }
             },
-            demoHtml: {
-                files: ['docs/**/*.html']
-            },
-            options: {
-                livereload: true
+            html: {
+                files: ['docs/**/*.html'],
+                options: {
+                    livereload: true
+                }
             }
         }
     });
