@@ -9,8 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title page-title>UI-Router PageTitle</title>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+  <link href="https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,17 +24,19 @@
       <br>
       <h3>ui-router-page-title demo</h3>
       <br>
-      <ul class="breadcrumb">
-        <li ui-sref-active="active">
-          <a ui-sref="home">Home Page</a>
-        </li>
-        <li ui-sref-active="active">
-          <a ui-sref="installation">Installation</a>
-        </li>
-        <li ui-sref-active="active">
-          <a ui-sref="usage">Usage</a>
-        </li>
-      </ul>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" ui-sref-active="active">
+            <a ui-sref="home">Home Page</a>
+          </li>
+          <li class="breadcrumb-item" ui-sref-active="active">
+            <a ui-sref="installation">Installation</a>
+          </li>
+          <li class="breadcrumb-item" ui-sref-active="active">
+            <a ui-sref="usage">Usage</a>
+          </li>
+        </ol>
+      </nav>
       <div ui-view></div>
     </div>
     <div class="col60">
@@ -57,17 +58,17 @@
       <p>add the
         <a href="https://github.com/Sibiraj-S/ui-router-page-title" target="_blank">uiRouterTitle</a> dependency to the module</p>
       <pre><code class="javascript">
-      angular.module('myApp', ['uiRouterTitle'])
+      angular.module('myApp', ['uiRouterTitle']);
           </code></pre>
       <p>in your router config</p>
       <pre><code class="javascript">
       .state('app.home', {
-          url: '/home',
-          data: {
-            pageTitle: 'Home' // is being set as tilte
-          },
-          templateUrl: 'templates/home.html'
-      })
+        url: '/home',
+        data: {
+          pageTitle: 'Home' // is being set as tilte
+        },
+        templateUrl: 'templates/home.html'
+      });
           </code></pre>
       <p>in your html add
         <mark>page-title</mark> directive</p>
@@ -77,7 +78,7 @@
     </div>
   </div>
   <!-- dependencies -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src="//unpkg.com/angular@1.6.10/angular.min.js"></script>
   <script type="text/javascript" src="//unpkg.com/@uirouter/angularjs@1.0.15/release/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="//unpkg.com/ui-router-page-title@latest/page-title.min.js"></script>
   <!-- app scripts -->
