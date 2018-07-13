@@ -11,6 +11,7 @@ You can directly clone/download [here][ui-router-page-title]
 ```bash
 git clone git@github.com:Sibiraj-S/ui-router-page-title.git
 ```
+
 or use cdn
 
 ##### Minified
@@ -24,6 +25,7 @@ or use cdn
 ```bash
 //unpkg.com/ui-router-page-title@latest/page-title.js
 ```
+
 or
 
 Install via Package managers such as [npm][npm] or [yarn][yarn]
@@ -62,10 +64,10 @@ $stateProvider.state('home', {
 ```
 
 and in your html
+
 ```html
 <title page-title>Page Title</title>
 ```
-
 
 [uiRouter]: https://ui-router.github.io/
 [npm]: https://www.npmjs.com/
