@@ -4,12 +4,12 @@
   "description": "Page Title directive for angular-ui-router",
   "scripts": {
     "build": "grunt build",
-    "cz": "git-cz",
     "develop": "grunt develop",
-    "lint": "grunt tslint",
+    "lint": "grunt lint",
     "postbuild": "sh ./scripts/postbuild.sh",
     "prebuild": "sh ./scripts/prebuild.sh",
-    "precommit": "npm run lint",
+    "precommit": "npm run test",
+    "prepublishOnly": "node ./scripts/prepublish.js",
     "prerelease": "npm run build",
     "release": "sh ./scripts/release.sh",
     "start": "grunt serve",
@@ -28,6 +28,7 @@
   ],
   "author": "Sibiraj-S",
   "license": "MIT",
+  "private": true,
   "bugs": {
     "url": "https://github.com/Sibiraj-S/ui-router-page-title/issues"
   },
@@ -37,28 +38,19 @@
     "angular": ">=1.6.0"
   },
   "devDependencies": {
-    "@types/angular": "^1.6.48",
-    "@types/node": "^10.5.2",
-    "@uirouter/angularjs": "^1.0.18",
+    "@uirouter/angularjs": "^1.0.19",
     "angular": "^1.7.2",
-    "commitizen": "^2.10.1",
-    "cz-conventional-changelog": "^2.1.0",
+    "chalk": "^2.4.1",
     "grunt": "^1.0.3",
+    "grunt-coffeelintr": "^1.1.0",
+    "grunt-contrib-coffee": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-ts": "^6.0.0-beta.20",
-    "grunt-tslint": "^5.0.2",
+    "grunt-eslint": "^21.0.0",
     "husky": "^0.14.3",
-    "load-grunt-tasks": "^4.0.0",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
+    "load-grunt-tasks": "^4.0.0"
   }
 }

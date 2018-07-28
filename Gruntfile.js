@@ -15,25 +15,21 @@ module.exports = grunt => {
     // grunt tasks
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        tslint: {
+        coffeelintr: {
             options: {
-                configuration: "tslint.json",
-                force: false,
-                fix: false
+                configFile: 'coffeelint.json'
             },
-            files: {
-                src: ["src/**/*.ts"]
+            source: ['src/page-title.coffee']
+        },
+        coffee: {
+            compileToJs: {
+                files: {
+                    'dist/page-title.js': 'src/page-title.coffee'
+                }
             }
         },
-        ts: {
-            convert: {
-                src: ["src/**/*.ts", "!node_modules/**"],
-                outDir: "./dist"
-            },
-            options: {
-                rootDir: "./src",
-                sourceMap: false
-            }
+        eslint: {
+            target: ['scripts/**/*.js', 'docs/**/**.js', 'Gruntfile.js']
         },
         uglify: {
             options: {
@@ -55,7 +51,7 @@ module.exports = grunt => {
             },
             dist: {
                 src: ['dist/page-title.js'],
-                dest: 'dist/page-title.js',
+                dest: 'dist/page-title.js'
             }
         },
         connect: {
@@ -83,8 +79,8 @@ module.exports = grunt => {
         },
         watch: {
             scriptTS: {
-                files: ['src/**/*.ts'],
-                tasks: ['ts']
+                files: ['src/**/*.coffee'],
+                tasks: ['coffee']
             },
             scriptJS: {
                 files: ['docs/**/*.js', 'dist/**/*.js'],
@@ -112,8 +108,9 @@ module.exports = grunt => {
     });
 
     // grunt tasks
-    grunt.registerTask('default', ["tslint", "ts"]);
-    grunt.registerTask('develop', ["default", "concat", "sass", "watch"]);
-    grunt.registerTask("serve", ["connect"]);
-    grunt.registerTask("build", ["default", "concat", "uglify"]);
+    grunt.registerTask('default', ['coffeelintr', 'coffee']);
+    grunt.registerTask('develop', ['default', 'concat', 'sass', 'watch']);
+    grunt.registerTask('serve', ['connect']);
+    grunt.registerTask('lint', ['coffeelintr', 'eslint']);
+    grunt.registerTask('build', ['default', 'concat', 'uglify']);
 };
