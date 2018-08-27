@@ -38,8 +38,8 @@
     "angular": ">=1.6.0"
   },
   "devDependencies": {
-    "@uirouter/angularjs": "^1.0.19",
-    "angular": "^1.7.2",
+    "@uirouter/angularjs": "^1.0.20",
+    "angular": "^1.7.3",
     "chalk": "^2.4.1",
     "grunt": "^1.0.3",
     "grunt-coffeelintr": "^1.1.0",
@@ -47,7 +47,7 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-uglify": "^3.4.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^21.0.0",
     "husky": "^0.14.3",
