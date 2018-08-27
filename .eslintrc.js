@@ -8,7 +8,7 @@ module.exports = {
     semi: ['error', 'always'],
     'comma-dangle': ['error', 'never'],
     'operator-linebreak': ['error', 'before'],
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': ['error', 'never']
   },
   globals: {
     angular: true
