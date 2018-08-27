@@ -14,13 +14,13 @@ git clone git@github.com:Sibiraj-S/ui-router-page-title.git
 
 or use cdn
 
-##### Minified
+**Minified:**
 
 ```bash
 //unpkg.com/ui-router-page-title@latest/page-title.min.js
 ```
 
-##### Pretty Printed
+**Pretty Printed:**
 
 ```bash
 //unpkg.com/ui-router-page-title@latest/page-title.js
