@@ -21,6 +21,8 @@ All notable changes to this project will be documented in this file.
 
 #### Dependency Updates
 
+* update eslint to v5.5.0 ([2cf03d0](https://github.com/Sibiraj-S/ui-router-page-title/commit/2cf03d0))
+* update grunt-contrib-uglify to v4.0.0 ([2cf03d0](https://github.com/Sibiraj-S/ui-router-page-title/commit/2cf03d0))
 * update grunt-coffeelintr to v1.1.1 ([3ef6c0c](https://github.com/Sibiraj-S/ui-router-page-title/commit/3ef6c0c))
 
 ## v1.0.8 (2018-07-28)
