@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sibiraj-S/ui-router-page-title.git"
+    "url": "git+https://github.com/sibiraj-s/ui-router-page-title.git"
   },
   "keywords": [
     "ui-router-page-title",
@@ -25,13 +25,13 @@
     "page-title",
     "ui.router"
   ],
-  "author": "Sibiraj-S",
+  "author": "sibiraj-s",
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/Sibiraj-S/ui-router-page-title/issues"
+    "url": "https://github.com/sibiraj-s/ui-router-page-title/issues"
   },
-  "homepage": "https://github.com/Sibiraj-S/ui-router-page-title",
+  "homepage": "https://github.com/sibiraj-s/ui-router-page-title",
   "peerDependencies": {
     "@uirouter/angularjs": ">=1.0.5",
     "angular": ">=1.6.0"

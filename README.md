@@ -1,4 +1,4 @@
-# ui-router-page-title [![Build Status](https://travis-ci.com/Sibiraj-S/ui-router-page-title.svg?branch=master)](https://travis-ci.com/Sibiraj-S/ui-router-page-title)
+# ui-router-page-title [![Build Status](https://travis-ci.com/sibiraj-s/ui-router-page-title.svg?branch=master)](https://travis-ci.com/sibiraj-s/ui-router-page-title)
 
 Dynamic Page Title directive for angular-ui-router(>=1.0.0)
 
@@ -9,7 +9,7 @@ Dynamic Page Title directive for angular-ui-router(>=1.0.0)
 You can directly clone/download [here][ui-router-page-title]
 
 ```bash
-git clone git@github.com:Sibiraj-S/ui-router-page-title.git
+git clone git@github.com:sibiraj-s/ui-router-page-title.git
 ```
 
 or use cdn
@@ -73,5 +73,5 @@ and in your html
 [npm]: https://www.npmjs.com/
 [yarn]: https://yarnpkg.com/lang/en/
 [github]: https://sibiraj-s.github.io/
-[ui-router-page-title]: https://github.com/Sibiraj-S/ui-router-page-title
+[ui-router-page-title]: https://github.com/sibiraj-s/ui-router-page-title
 [demo]: https://sibiraj-s.github.io/ui-router-page-title/
