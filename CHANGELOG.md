@@ -11,19 +11,24 @@ All notable changes to this project will be documented in this file.
 > - Documentation
 > - Internal
 
-## Unreleased
+## v1.0.9 (2018-10-05)
 
 #### Internal
 
 * run travis builds with trusty enabled ([22d6ddc](https://github.com/sibiraj-s/ui-router-page-title/commit/22d6ddc))
 * add eslint to lint files ([27f7e51](https://github.com/sibiraj-s/ui-router-page-title/commit/27f7e51))
 * add standardJs rules to eslint ([24b8902](https://github.com/sibiraj-s/ui-router-page-title/commit/24b8902))
+* remove vscode config in favour of editorconfig ([958e69d](https://github.com/sibiraj-s/ui-router-page-title/commit/958e69d))
+* update github username ([316d88c](https://github.com/sibiraj-s/ui-router-page-title/commit/316d88c))
 
 #### Dependency Updates
 
-* update eslint to v5.5.0 ([2cf03d0](https://github.com/sibiraj-s/ui-router-page-title/commit/2cf03d0))
 * update grunt-contrib-uglify to v4.0.0 ([2cf03d0](https://github.com/sibiraj-s/ui-router-page-title/commit/2cf03d0))
 * update grunt-coffeelintr to v1.1.1 ([3ef6c0c](https://github.com/sibiraj-s/ui-router-page-title/commit/3ef6c0c))
+* update eslint to v5.6.1 ([ea8aa55](https://github.com/sibiraj-s/ui-router-page-title/commit/ea8aa55))
+* update grunt-contrib-connect to v2.0.0 ([ea8aa55](https://github.com/sibiraj-s/ui-router-page-title/commit/ea8aa55))
+* update eslint-plugin-promise to v4.0.1 ([ea8aa55](https://github.com/sibiraj-s/ui-router-page-title/commit/ea8aa55))
+* update husky to v1.1.0 ([ea8aa55](https://github.com/sibiraj-s/ui-router-page-title/commit/ea8aa55))
 
 ## v1.0.8 (2018-07-28)
 
