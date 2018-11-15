@@ -2,6 +2,12 @@
   "name": "ui-router-page-title",
   "version": "1.0.9",
   "description": "Page Title directive for angular-ui-router",
+  "author": "sibiraj-s",
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/sibiraj-s/ui-router-page-title.git",
+  "bugs": "https://github.com/sibiraj-s/ui-router-page-title/issues",
+  "homepage": "https://github.com/sibiraj-s/ui-router-page-title",
   "scripts": {
     "build": "grunt build",
     "develop": "grunt develop",
@@ -15,23 +21,12 @@
     "test": "npm run lint",
     "watch": "grunt watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sibiraj-s/ui-router-page-title.git"
-  },
   "keywords": [
     "ui-router-page-title",
     "angularjs-page-title",
     "page-title",
     "ui.router"
   ],
-  "author": "sibiraj-s",
-  "license": "MIT",
-  "private": true,
-  "bugs": {
-    "url": "https://github.com/sibiraj-s/ui-router-page-title/issues"
-  },
-  "homepage": "https://github.com/sibiraj-s/ui-router-page-title",
   "peerDependencies": {
     "@uirouter/angularjs": ">=1.0.5",
     "angular": ">=1.6.0"
