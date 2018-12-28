@@ -6,10 +6,28 @@ All notable changes to this project will be documented in this file.
 > - Features
 > - Bug Fixes
 > - Performance Improvements
+> - Enhancements
 > - Dependency Updates
 > - Breaking Changes
 > - Documentation
 > - Internal
+
+## v1.0.10 (2018-12-28)
+
+#### Enhancements
+
+- migrate from `unpkg` cdn to `jsdelivr` ([d0e0d57](https://github.com/sibiraj-s/ui-router-page-title/commit/d0e0d57))
+
+#### Internal
+
+- extend LICENSE to year 2019 ([e918c9b](https://github.com/sibiraj-s/ui-router-page-title/commit/e918c9b))
+- replace `eslint-config-standard` with `eslint-config-airbnb-base` ([c26ad43](https://github.com/sibiraj-s/ui-router-page-title/commit/c26ad43))
+- replace `grunt-contrib-sass` with `grunt-sass` ([c26ad43](https://github.com/sibiraj-s/ui-router-page-title/commit/c26ad43))
+
+#### Dependency Updates
+
+- update eslint to v5.11.1 ([c26ad43](https://github.com/sibiraj-s/ui-router-page-title/commit/c26ad43))
+- update husky to v1.3.1 ([c26ad43](https://github.com/sibiraj-s/ui-router-page-title/commit/c26ad43))
 
 ## v1.0.9 (2018-10-05)
 
