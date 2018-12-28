@@ -17,13 +17,13 @@ or use cdn
 **Minified:**
 
 ```bash
-//unpkg.com/ui-router-page-title@latest/page-title.min.js
+//cdn.jsdelivr.net/npm/ui-router-page-title@latest/page-title.min.js
 ```
 
 **Pretty Printed:**
 
 ```bash
-//unpkg.com/ui-router-page-title@latest/page-title.js
+//cdn.jsdelivr.net/npm/ui-router-page-title@latest/page-title.js
 ```
 
 or
