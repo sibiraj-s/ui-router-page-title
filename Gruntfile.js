@@ -1,3 +1,4 @@
+const loadGruntTasks = require('load-grunt-tasks');
 const dartSass = require('sass');
 
 const banner = '/*!\n * @module <%= pkg.name %>\n'
@@ -9,7 +10,7 @@ const banner = '/*!\n * @module <%= pkg.name %>\n'
 
 module.exports = (grunt) => {
   // load all grunt tasks
-  require('load-grunt-tasks')(grunt); // eslint-disable-line global-require
+  loadGruntTasks(grunt);
 
   // grunt tasks
   grunt.initConfig({
@@ -44,18 +45,6 @@ module.exports = (grunt) => {
         dest: 'dist/page-title.js',
       },
     },
-    connect: {
-      server: {
-        options: {
-          hostname: 'localhost',
-          open: true,
-          port: 9002,
-          base: './',
-          keepalive: true,
-          livereload: true,
-        },
-      },
-    },
     sass: {
       options: {
         implementation: dartSass,
@@ -68,39 +57,41 @@ module.exports = (grunt) => {
         },
       },
     },
+    browserSync: {
+      bsFiles: {
+        src: [
+          'docs/*.css',
+          'docs/**/*.html',
+          'docs/*.js',
+          'dist/*.js',
+        ],
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: 'docs',
+          routes: {
+            '/dist': 'dist',
+          },
+        },
+        open: false,
+      },
+    },
     watch: {
-      scriptTS: {
+      coffee: {
         files: ['src/**/*.coffee'],
         tasks: ['coffee'],
-      },
-      scriptJS: {
-        files: ['docs/**/*.js', 'dist/**/*.js'],
-        options: {
-          livereload: true,
-        },
       },
       scss: {
         files: ['docs/**/*.scss'],
         tasks: ['sass'],
       },
-      css: {
-        files: ['docs/**/*.css'],
-        options: {
-          livereload: true,
-        },
-      },
-      html: {
-        files: ['docs/**/*.html'],
-        options: {
-          livereload: true,
-        },
-      },
     },
   });
 
-  // grunt tasks
+  // register grunt tasks
   grunt.registerTask('default', ['coffee']);
-  grunt.registerTask('develop', ['default', 'concat', 'sass', 'watch']);
-  grunt.registerTask('serve', ['sass', 'connect']);
+  grunt.registerTask('develop', ['default', 'watch']);
+  grunt.registerTask('serve', ['browserSync', 'watch']);
   grunt.registerTask('build', ['default', 'concat', 'uglify']);
 };
