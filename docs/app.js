@@ -1,6 +1,6 @@
-const app = angular.module('myApp', ['uiRouterTitle', 'ui.router']);
+const app = angular.module('app', ['uiRouterTitle', 'ui.router']);
 
-app.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) => {
+const stateConfig = ($stateProvider, $urlRouterProvider) => {
   $urlRouterProvider.otherwise('/home');
 
   $urlRouterProvider.when('/', '/home');
@@ -27,4 +27,8 @@ app.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterP
       },
       templateUrl: './templates/usage.html',
     });
-}]);
+};
+
+stateConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+
+app.config(stateConfig);
