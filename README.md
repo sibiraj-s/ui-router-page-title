@@ -38,28 +38,28 @@ yarn add ui-router-page-title
 
 ### Usage
 
-Import the modules required for ui-router-page-title. It is necessary to include [ui.router][uiRouter] for ui-router-page-title to work
+Import the modules required for ui-router-page-title. It is necessary to include [ui.router][uirouter] for ui-router-page-title to work
 
- ```html
+```html
 <script src="angular/angular.min.js"></script>
 <script src="../page-title.min.js"></script>
- ```
+```
 
 add `uiRouterTitle` dependency to the module
 
 ```js
-angular.module('myApp', ['uiRouterTitle'])
+angular.module('myApp', ['uiRouterTitle']);
 ```
 
 in routes config
 
 ```js
 $stateProvider.state('home', {
-    url: '/home',
-    data:{
-        pageTitle: 'Home'
-    },
-    template: '<h3>Home Page!</h3>'
+  url: '/home',
+  data: {
+    pageTitle: 'Home'
+  },
+  template: '<h3>Home Page!</h3>'
 });
 ```
 
@@ -69,7 +69,7 @@ and in your html
 <title page-title>Page Title</title>
 ```
 
-[uiRouter]: https://ui-router.github.io/
+[uirouter]: https://ui-router.github.io/
 [npm]: https://www.npmjs.com/
 [yarn]: https://yarnpkg.com/lang/en/
 [github]: https://sibiraj-s.github.io/
