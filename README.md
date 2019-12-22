@@ -9,7 +9,7 @@ Dynamic Page Title directive for angular-ui-router(>=1.0.0)
 You can directly clone/download [here][ui-router-page-title]
 
 ```bash
-git clone git@github.com:sibiraj-s/ui-router-page-title.git
+git clone https://github.com/sibiraj-s/ui-router-page-title.git
 ```
 
 or use cdn
