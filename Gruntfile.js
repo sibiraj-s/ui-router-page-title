@@ -14,21 +14,12 @@ module.exports = (grunt) => {
   // grunt tasks
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    coffeelintr: {
-      options: {
-        configFile: 'coffeelint.json',
-      },
-      source: ['src/page-title.coffee'],
-    },
     coffee: {
       compileToJs: {
         files: {
           'dist/page-title.js': 'src/page-title.coffee',
         },
       },
-    },
-    eslint: {
-      target: ['scripts/**/*.js', 'docs/**/**.js', 'Gruntfile.js'],
     },
     uglify: {
       options: {
@@ -108,9 +99,8 @@ module.exports = (grunt) => {
   });
 
   // grunt tasks
-  grunt.registerTask('default', ['coffeelintr', 'coffee']);
+  grunt.registerTask('default', ['coffee']);
   grunt.registerTask('develop', ['default', 'concat', 'sass', 'watch']);
   grunt.registerTask('serve', ['sass', 'connect']);
-  grunt.registerTask('lint', ['coffeelintr', 'eslint']);
   grunt.registerTask('build', ['default', 'concat', 'uglify']);
 };
