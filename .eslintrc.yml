@@ -16,6 +16,5 @@ globals:
 
 env:
   node: true
-  mocha: true
   jasmine: true
   angular/mocks: true
