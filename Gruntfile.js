@@ -81,6 +81,33 @@ module.exports = (grunt) => {
         }],
       },
     },
+    clean: {
+      dest: {
+        src: 'dist/',
+      },
+    },
+    copy: {
+      files: {
+        expand: true,
+        src: ['LICENSE', 'README.md', 'CHANGELOG.md'],
+        dest: 'dist/',
+      },
+      pkgJson: {
+        options: {
+          process: function processPkgJson(data) {
+            const pkg = JSON.parse(data);
+            pkg.main = 'page-title.min.js';
+            delete pkg.scripts;
+            delete pkg.devDependencies;
+            delete pkg.private;
+            return JSON.stringify(pkg, null, 2);
+          },
+        },
+        expand: true,
+        src: 'package.json',
+        dest: 'dist/',
+      },
+    },
     watch: {
       coffee: {
         files: ['src/**/*.coffee'],
@@ -96,5 +123,5 @@ module.exports = (grunt) => {
   // register grunt tasks
   grunt.registerTask('default', ['coffee']);
   grunt.registerTask('serve', ['default', 'browserSync', 'watch']);
-  grunt.registerTask('build', ['default', 'concat', 'uglify']);
+  grunt.registerTask('build', ['clean', 'default', 'concat', 'uglify', 'copy']);
 };
