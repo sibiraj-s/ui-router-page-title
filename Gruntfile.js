@@ -29,7 +29,7 @@ module.exports = (grunt) => {
           comments: '/^!/',
         },
       },
-      compile: {
+      minify: {
         files: {
           'dist/page-title.min.js': ['dist/page-title.js'],
         },
@@ -40,7 +40,7 @@ module.exports = (grunt) => {
         stripBanners: true,
         banner,
       },
-      compile: {
+      addBanner: {
         src: ['dist/page-title.js'],
         dest: 'dist/page-title.js',
       },
@@ -82,7 +82,7 @@ module.exports = (grunt) => {
       },
     },
     clean: {
-      dest: {
+      outDir: {
         src: 'dist/',
       },
     },
