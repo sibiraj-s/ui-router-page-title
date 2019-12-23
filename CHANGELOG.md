@@ -3,6 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 > **Tags**
+>
 > - Features
 > - Bug Fixes
 > - Performance Improvements
@@ -11,6 +12,23 @@ All notable changes to this project will be documented in this file.
 > - Breaking Changes
 > - Documentation
 > - Internal
+
+## v1.0.11 (2019-12-23)
+
+#### Dependency Updates
+
+- update cdn dependencies ([4891835](https://github.com/sibiraj-s/ui-router-page-title/commit/4891835))
+- update highlight.js to v9.17.1 ([6eafbcc](https://github.com/sibiraj-s/ui-router-page-title/commit/6eafbcc))
+- bump devDependencies ([c1a1ba8](https://github.com/sibiraj-s/ui-router-page-title/commit/c1a1ba8))
+
+#### Internal
+
+- migrate from travis-ci to github actions ([1d76b88](https://github.com/sibiraj-s/ui-router-page-title/commit/1d76b88))
+- move custom build tasks to grunt ([9672cad](https://github.com/sibiraj-s/ui-router-page-title/commit/9672cad))
+- simplify development steps ([f388e7b](https://github.com/sibiraj-s/ui-router-page-title/commit/f388e7b))
+- use browsersync for local server ([7148a62](https://github.com/sibiraj-s/ui-router-page-title/commit/7148a62))
+- add karma-jasmine unit tests ([8e8fcb3](https://github.com/sibiraj-s/ui-router-page-title/commit/8e8fcb3))
+- use lint-staged to lint git staged files ([c8add90](https://github.com/sibiraj-s/ui-router-page-title/commit/c8add90))
 
 ## v1.0.10 (2018-12-28)
 
