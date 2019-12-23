@@ -13,7 +13,6 @@
   },
   "scripts": {
     "build": "grunt build",
-    "develop": "grunt develop",
     "postbuild": "sh ./scripts/postbuild.sh",
     "prebuild": "sh ./scripts/prebuild.sh",
     "prepublishOnly": "node ./scripts/prepublish.js",

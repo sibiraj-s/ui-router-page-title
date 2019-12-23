@@ -75,6 +75,10 @@ module.exports = (grunt) => {
           },
         },
         open: false,
+        rewriteRules: [{
+          match: '//cdn.jsdelivr.net/npm/ui-router-page-title@latest/page-title.min.js',
+          replace: '/dist/page-title.js',
+        }],
       },
     },
     watch: {
@@ -91,7 +95,6 @@ module.exports = (grunt) => {
 
   // register grunt tasks
   grunt.registerTask('default', ['coffee']);
-  grunt.registerTask('develop', ['default', 'watch']);
-  grunt.registerTask('serve', ['browserSync', 'watch']);
+  grunt.registerTask('serve', ['default', 'browserSync', 'watch']);
   grunt.registerTask('build', ['default', 'concat', 'uglify']);
 };
