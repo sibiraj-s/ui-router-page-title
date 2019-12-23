@@ -1,4 +1,4 @@
-# ui-router-page-title [![Build Status](https://travis-ci.com/sibiraj-s/ui-router-page-title.svg?branch=master)](https://travis-ci.com/sibiraj-s/ui-router-page-title)
+# ui-router-page-title [![Tests](https://github.com/sibiraj-s/ui-router-page-title/workflows/Tests/badge.svg)](https://github.com/sibiraj-s/ui-router-page-title/actions)
 
 Dynamic Page Title directive for angular-ui-router(>=1.0.0)
 
