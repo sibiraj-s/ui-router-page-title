@@ -41,7 +41,8 @@ yarn add ui-router-page-title
 Import the modules required for ui-router-page-title. It is necessary to include [ui.router][uirouter] for ui-router-page-title to work
 
 ```html
-<script src="angular/angular.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="angular-ui-router.min.js"></script>
 <script src="../page-title.min.js"></script>
 ```
 
