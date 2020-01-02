@@ -12,14 +12,13 @@
     "node": ">=10"
   },
   "scripts": {
+    "serve": "grunt serve",
     "build": "grunt build",
     "prepublishOnly": "node ./scripts/prepublish.js",
     "prerelease": "npm run build",
     "release": "sh ./scripts/release.sh",
-    "start": "grunt serve",
     "test": "karma start --single-run",
-    "test:watch": "karma start",
-    "watch": "grunt watch"
+    "test:watch": "karma start"
   },
   "keywords": [
     "ui-router-page-title",
