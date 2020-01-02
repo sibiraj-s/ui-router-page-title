@@ -13,6 +13,21 @@ All notable changes to this project will be documented in this file.
 > - Documentation
 > - Internal
 
+## v1.0.12 (2020-01-03)
+
+#### Enhancements
+
+- remove unused ngmodel scope binding ([87a5e04](https://github.com/sibiraj-s/ui-router-page-title/commit/87a5e04))
+
+#### Dependency Updates
+
+- update @uirouter/angularjs to v1.0.24 ([0eaf6bd](https://github.com/sibiraj-s/ui-router-page-title/commit/0eaf6bd))
+
+#### Internal
+
+- update LICENSE ([9e4f686](https://github.com/sibiraj-s/ui-router-page-title/commit/9e4f686))
+- add missing coffeelint dependency ([a473ab5](https://github.com/sibiraj-s/ui-router-page-title/commit/a473ab5))
+
 ## v1.0.11 (2019-12-23)
 
 #### Dependency Updates
