@@ -2,9 +2,8 @@
 
 $uiRouterTitleDirective = ($timeout, $transitions) ->
   restrict: 'A'
-  scope:
-    ngModel: '='
-  link: (scope, element, attrs) ->
+  scope: {}
+  link: (_, element) ->
 
     $transitions.onStart {}, (trans) ->
 
