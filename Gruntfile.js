@@ -76,7 +76,7 @@ module.exports = (grunt) => {
         },
         open: false,
         rewriteRules: [{
-          match: '//cdn.jsdelivr.net/npm/ui-router-page-title@latest/page-title.min.js',
+          match: 'https://cdn.jsdelivr.net/npm/ui-router-page-title@latest/page-title.min.js',
           replace: '/dist/page-title.js',
         }],
       },
@@ -94,7 +94,7 @@ module.exports = (grunt) => {
       },
       pkgJson: {
         options: {
-          process: function processPkgJson(data) {
+          process: (data) => {
             const pkg = JSON.parse(data);
             pkg.main = 'page-title.min.js';
             delete pkg.scripts;
