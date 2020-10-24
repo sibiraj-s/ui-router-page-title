@@ -28,6 +28,9 @@
     "page-title",
     "ui.router"
   ],
+  "peerDependencies": {
+    "angular": "^1.6.0"
+  },
   "devDependencies": {
     "@coffeelint/cli": "^4.1.1",
     "@uirouter/angularjs": "^1.0.28",
