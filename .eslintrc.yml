@@ -1,12 +1,20 @@
+root: true
+
 extends:
   - pegasus
-  - pegasus/node
 
 plugins:
   - angular
 
-rules:
-  no-console: off
+overrides:
+  - files:
+      - '!docs/*'
+      - '!src/*'
+      - Gruntfile.js
+    extends:
+      - pegasus/node
+    rules:
+      no-console: off
 
 globals:
   angular: true
