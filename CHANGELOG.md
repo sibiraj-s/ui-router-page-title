@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file.
 > - Documentation
 > - Internal
 
+## v1.0.13 (2020-12-13)
+
+#### Internal
+
+- update LICENSE ([0d35a99](https://github.com/sibiraj-s/ui-router-page-title/commit/0d35a99))
+
 ## v1.0.12 (2020-01-03)
 
 #### Enhancements
