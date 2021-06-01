@@ -9,7 +9,7 @@
   "bugs": "https://github.com/sibiraj-s/ui-router-page-title/issues",
   "homepage": "https://github.com/sibiraj-s/ui-router-page-title",
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "lint:js": "eslint . --ignore-path .gitignore",
