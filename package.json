@@ -56,6 +56,6 @@
     "karma-jasmine": "^4.0.1",
     "lint-staged": "^12.3.4",
     "load-grunt-tasks": "^5.1.0",
-    "sass": "^1.49.7"
+    "sass": "^1.49.8"
   }
 }
