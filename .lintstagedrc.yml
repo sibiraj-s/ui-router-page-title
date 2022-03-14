@@ -1,5 +1,2 @@
-'*.js':
-  - eslint --fix --ignore-path .gitignore
-
-'*.coffee':
-  - coffeelint -f coffeelint.json --reporter coffeelint-reporter
+'*.js': eslint --fix
+'*.coffee': coffeelint -f coffeelint.json --reporter coffeelint-reporter
